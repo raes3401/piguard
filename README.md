@@ -1,4 +1,4 @@
-Raspberry Pi AI 保全系統
+ Raspberry Pi AI 保全系統
 一個基於 Raspberry Pi 的智慧保全系統，結合 PIR 感測器、攝影機及 Mediapipe AI 人體偵測模型，實現自動偵測人體入侵，並透過 Telegram 即時警報及 Google Drive 雲端備份圖片。
 
 
@@ -16,7 +16,7 @@ AI 影像辨識：利用 Mediapipe 判斷畫面中是否有人，減少誤報。
 Telegram 指令控制：可透過 /start 啟動與 /stop 停止偵測。
 
 
-硬體需求
+硬體配置
 Raspberry Pi 5 (4GB 版本)
 
 PIR 感測器 (HC-SR501)
