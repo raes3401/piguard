@@ -1,6 +1,7 @@
 Raspberry Pi AI 保全系統
 一個基於 Raspberry Pi 的智慧保全系統，結合 PIR 感測器、攝影機及 Mediapipe AI 人體偵測模型，實現自動偵測人體入侵，並透過 Telegram 即時警報及 Google Drive 雲端備份圖片。
 
+
 功能簡介
 PIR 動態偵測：感測環境是否有人體移動。
 
@@ -14,6 +15,7 @@ AI 影像辨識：利用 Mediapipe 判斷畫面中是否有人，減少誤報。
 
 Telegram 指令控制：可透過 /start 啟動與 /stop 停止偵測。
 
+
 硬體需求
 Raspberry Pi 5 (4GB 版本)
 
@@ -24,6 +26,7 @@ USB 攝影機 (例如羅技 C310)
 網路連線（Wi-Fi 或有線）
 
 microSD 卡（安裝系統與存放程式與圖片）
+
 
 軟體需求
 Raspberry Pi OS (建議最新版 64-bit)
@@ -66,6 +69,7 @@ rclone config
 
 將 Bot 加入目標聊天群組或使用私人聊天，取得 chat_id（可用 API 查詢或其他工具）。
 
+
 4. 配置程式碼參數
 編輯 main.py，更新以下參數：
 
@@ -76,6 +80,8 @@ base_folder = '/home/pi/piguard'  # 照片本地存放路徑
 bot_token = '你的Telegram Bot Token'
 chat_id = '你的Telegram Chat ID'
 gdrive_folder = 'PiGuard_Backup'  # Google Drive 同步資料夾名稱
+
+
 5. 執行程式
 bash
 複製
